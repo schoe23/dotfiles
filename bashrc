@@ -95,3 +95,18 @@ export EDITOR=vim
 # Things for python virtualenv
 export PIP_REQUIRE_VIRTUALENV=true
 export PIP_RESPECT_VIRTUALENV=true
+
+# Kill of my proceses (useful once in a while because disconnects don't kill them)
+alias killall='pkill -u zhangb'
+
+# cd aliases
+alias ..="cd .."        #go to parent dir
+alias ...="cd ../.."    #go to grandparent dir
+alias ....="cd ../../.."    #go to great-grandparent dir
+alias .....="cd ../../../.."    #go to great-great-grandparent dir
+
+# rc files
+alias vimrc="vim ~/.vimrc"
+alias bashrc="vim ~/.bashrc"
+alias screenrc="vim ~/.screenrc"
+alias refresh="source ~/.bashrc"
