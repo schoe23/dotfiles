@@ -110,3 +110,9 @@ alias vimrc="vim ~/.vimrc"
 alias bashrc="vim ~/.bashrc"
 alias screenrc="vim ~/.screenrc"
 alias refresh="source ~/.bashrc"
+
+# start tmux
+tmux -2 a
+
+# grep
+search () { find . | xargs grep "$@"; }

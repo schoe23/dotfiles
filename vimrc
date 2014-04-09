@@ -167,6 +167,7 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " NerdTree settings
 let g:nerdtree_tabs_open_on_console_startup = 1
+let NERDTreeQuitOnOpen=1
 "
 " Synstastic settings
 let g:syntastic_python_checkers=['pylint', 'flake8']
@@ -190,3 +191,9 @@ if 'VIRTUAL_ENV' in os.environ:
     execfile(activate_this, dict(__file__=activate_this))
 EOF
 endif
+
+" Secure Shell remappings
+map <C-e> <C-w>
+
+" Open Nerd Tree
+command T NERDTreeMirrorOpen
