@@ -1,4 +1,4 @@
-Johnny Gaffey's Dotfiles
+Dotfiles
 ========================
 
 How to install:
