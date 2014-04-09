@@ -1,8 +1,8 @@
 [user]
-    name = Johnny Gaffey 
-    email = john@socialgrowthtechnologies.com
+    name = Brian Zhang
+    email = tangerinewhite32@gmail.com
 [github]
-    user = johnnygaffey
+    user = Brian
 [core]
     editor = vim
     excludesfile = ~/.gitignore_global
