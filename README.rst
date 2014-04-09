@@ -2,8 +2,7 @@ Johnny Gaffey's Dotfiles
 ========================
 
 How to install:
-    clone the repo.
 
-    run: bash install.sh
-
-    source ~/.bashrc
+1. clone the repo
+2. bash install.sh
+3. source ~/.bashrc
