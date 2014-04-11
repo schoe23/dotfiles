@@ -83,8 +83,17 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-e=\\\033
-export PS1="\n\[$e[35m\].-(\[$e[33m\]\u@\h \[$e[36m\]\t\[$e[35m\] \$(parse_git_branch))\[$e[0m\]\w\n\[$e[35m\]\\\`-->\[$e[0m\] "
+BLUE="\[\033[0;34m\]"
+BLUEBOLD="\[\033[1;34m\]"
+GREEN="\[\033[1;32m\]"
+RED="\[\033[0;31m\]"
+REDBOLD="\[\033[1;31m\]"
+WHITE="\[\033[0m\]"
+WHITEBOLD="\[\033[1;37m\]"
+YELLOW="\[\033[0;33m\]"
+YELLOWBOLD="\[\033[1;33m\]"
+
+export PS1="\n$GREEN\u@\h $YELLOW\@ $YELLOWBOLD\$(parse_git_branch) $BLUEBOLD\w \n$WHITE\\$ "
 
 # virtualenvwrapper stuff.
 export WORKON_HOME=~/Envs
@@ -110,6 +119,9 @@ alias vimrc="vim ~/.vimrc"
 alias bashrc="vim ~/.bashrc"
 alias screenrc="vim ~/.screenrc"
 alias refresh="source ~/.bashrc"
+
+# Nethack
+alias nethack="telnet nethack.alt.org"
 
 # start tmux
 tmux -2 a

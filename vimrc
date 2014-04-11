@@ -195,5 +195,9 @@ endif
 " Secure Shell remappings
 map <C-e> <C-w>
 
+" Save
+nnoremap gs :w<Enter> 
+nnoremap gS :wq<Enter> 
+
 " Open Nerd Tree
 command T NERDTreeMirrorOpen
