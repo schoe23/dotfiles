@@ -2,7 +2,7 @@
     name = Brian Zhang
     email = tangerinewhite32@gmail.com
 [github]
-    user = Brian
+    user = tangerinewhite32
 [core]
     editor = vim
     excludesfile = ~/.gitignore_global
