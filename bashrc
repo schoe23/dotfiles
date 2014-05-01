@@ -83,7 +83,7 @@ WHITEBOLD="\[\033[1;37m\]"
 YELLOW="\[\033[0;33m\]"
 YELLOWBOLD="\[\033[1;33m\]"
 
-export PS1="\n$GREEN\u@\h $YELLOW\@ $YELLOWBOLD\$(parse_git_branch) $BLUEBOLD\w \n$WHITE\\$ "
+export PS1=" $GREEN\u@\h $YELLOW\@ $YELLOWBOLD\$(parse_git_branch) $BLUEBOLD\w \n$WHITE\\$ "
 
 # virtualenvwrapper stuff.
 export WORKON_HOME=~/Envs
