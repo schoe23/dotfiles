@@ -1,15 +1,5 @@
-source ~/.bash/aliases
-source ~/.bash/completions
-source ~/.bash/paths
-source ~/.bash/hg-completion
-
 #vim mode in the shell
 set -o vi
-
-# use .localrc for settings specific to one system
-if [ -f ~/.localrc ]; then
-  source ~/.localrc
-fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
@@ -51,11 +41,11 @@ fi
 
 parse_git_dirty ()
 {
-    [[ $(/usr/bin/git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
+    [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
 }
 parse_git_branch ()
 {
-    /usr/bin/git branch 2> /dev/null | grep '*' | sed "s/*\ \(.*\)/$(parse_git_dirty)\1/"
+    git branch 2> /dev/null | grep '*' | sed "s/*\ \(.*\)/$(parse_git_dirty)\1/"
 }
 
 # don't put duplicate lines in the history. See bash(1) for more options
@@ -127,4 +117,4 @@ alias nethack="telnet nethack.alt.org"
 tmux -2 a
 
 # grep
-search () { find . | xargs grep "$@"; }
+search () { find . | xargs grep --color=auto "$@"; }

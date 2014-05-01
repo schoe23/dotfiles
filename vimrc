@@ -29,6 +29,7 @@ Bundle 'davidhalter/jedi-vim'
 Bundle 'ervandew/supertab'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'dhruvasagar/vim-table-mode'
 
 filetype plugin indent on
 syntax enable                    " Turn on Syntax highlighting
@@ -152,12 +153,9 @@ set backup
 set writebackup
 
 
-if v:version >= 730
-    set colorcolumn=81
-    execute "set undodir=" . g:vim_home_path . "/undo"
-    set undofile
-    set undoreload=10000
-endif
+set colorcolumn=81
+execute "set undodir=" . g:vim_home_path . "/undo"
+set undofile
 "------------------------------------------------
 "" Plugin settings
 "------------------------------------------------
@@ -166,7 +164,7 @@ endif
 let g:SuperTabDefaultCompletionType = "context"
 
 " NerdTree settings
-let g:nerdtree_tabs_open_on_console_startup = 1
+let g:nerdtree_tabs_open_on_console_startup = 0
 let NERDTreeQuitOnOpen=1
 "
 " Synstastic settings
@@ -200,4 +198,4 @@ nnoremap gs :w<Enter>
 nnoremap gS :wq<Enter> 
 
 " Open Nerd Tree
-command T NERDTreeMirrorOpen
+map <F5> :NERDTreeToggle<Enter>
