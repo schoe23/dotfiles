@@ -197,5 +197,8 @@ map <C-e> <C-w>
 nnoremap gs :w<Enter> 
 nnoremap gS :wq<Enter> 
 
+" Hit Enter to center screen on cursor
+:nnoremap <Enter> zz
+
 " Open Nerd Tree
 map <F5> :NERDTreeToggle<Enter>

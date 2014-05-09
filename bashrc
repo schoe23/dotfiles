@@ -117,7 +117,7 @@ shopt -s cdspell
 cs ()
 {
     cd $1;
-    ls -F --color=auto
+    ls -F --color=auto;
 }
 
 # Nethack
