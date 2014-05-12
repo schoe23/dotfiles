@@ -197,8 +197,19 @@ map <C-e> <C-w>
 nnoremap gs :w<Enter> 
 nnoremap gS :wq<Enter> 
 
-" Hit Enter to center screen on cursor
+" Typos
+:command Q q
+:command W w
+:command Wq wq
+
+" Space to fold/unfold code
+:nmap <Space> za
+
+" Enter to center screen on cursor
 :nnoremap <Enter> zz
 
 " Open Nerd Tree
 map <F5> :NERDTreeToggle<Enter>
+
+" When I forget to sudo vim
+cmap w!! w !sudo tee % >/dev/null
