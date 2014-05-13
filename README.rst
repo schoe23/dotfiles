@@ -3,6 +3,10 @@ Dotfiles
 
 How to install:
 
-1. clone the repo
-2. bash install.sh
-3. source ~/.bashrc
+.. role:: bash(code)
+   :language: bash
+   
+1. Clone the repository
+2. Run :bash:`bash install.sh`
+3. Run :bash:`. ~/.bashrc`
+
