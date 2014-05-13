@@ -23,13 +23,10 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'mileszs/ack.vim'
 Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
 Bundle 'walm/jshint.vim'
-Bundle 'davidhalter/jedi-vim'
 Bundle 'ervandew/supertab'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'dhruvasagar/vim-table-mode'
 
 filetype plugin indent on
 syntax enable                    " Turn on Syntax highlighting
