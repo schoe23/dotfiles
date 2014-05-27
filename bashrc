@@ -100,9 +100,9 @@ alias killall='pkill -u zhangb'
 
 # cd aliases
 alias ..="cd ..; ls --color=auto"        #go to parent dir
-alias ...="cd ../.; ls --color=auto"    #go to grandparent dir
-alias ....="cd ../../.; ls --color=auto"    #go to great-grandparent dir
-alias .....="cd ../../../.; ls --color=auto"    #go to great-great-grandparent dir
+alias ...="cd ../..; ls --color=auto"    #go to grandparent dir
+alias ....="cd ../../..; ls --color=auto"    #go to great-grandparent dir
+alias .....="cd ../../../..; ls --color=auto"    #go to great-great-grandparent dir
 
 # rc files
 alias vimrc="vim ~/.vimrc"
