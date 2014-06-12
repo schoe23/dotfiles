@@ -1,8 +1,8 @@
 [user]
-    name = Brian Zhang
-    email = tangerinewhite32@gmail.com
+    name = Stacy Choe
+    email = stacy.choe@socialgrowthtechnologies.com
 [github]
-    user = tangerinewhite32
+    user = schoe23
 [core]
     editor = vim
     excludesfile = ~/.gitignore_global

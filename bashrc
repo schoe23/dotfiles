@@ -1,3 +1,8 @@
+#Skip if non-interactive shell
+if [[ $- != *i* ]]; then
+	return
+fi
+
 #vim mode in the shell
 set -o vi
 
@@ -95,9 +100,6 @@ export EDITOR=vim
 export PIP_REQUIRE_VIRTUALENV=true
 export PIP_RESPECT_VIRTUALENV=true
 
-# Kill of my proceses (useful once in a while because disconnects don't kill them)
-alias killall='pkill -u zhangb'
-
 # cd aliases
 alias ..="cd ..; ls --color=auto"        #go to parent dir
 alias ...="cd ../..; ls --color=auto"    #go to grandparent dir
@@ -119,12 +121,6 @@ cs ()
     cd $1;
     ls -F --color=auto;
 }
-
-# Nethack
-alias nethack="telnet nethack.alt.org"
-
-# start tmux
-tmux -2 a
 
 # grep
 search () { find . | xargs grep --color=auto "$@"; }

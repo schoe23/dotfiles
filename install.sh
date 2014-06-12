@@ -62,7 +62,7 @@ for dot in $(ls); do
 done
 
 # Cleanup
-rm -rf "$HOME/.dzen/dzen"
+rm -rf "$HOME/.virtualenv/virtualenv"
 
 if [[ $pretend -eq 1 ]]; then
     echo "Would make dirs '$HOME/.vim/{bundle,swap,backup,undo}"
