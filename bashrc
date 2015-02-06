@@ -124,3 +124,5 @@ cs ()
 
 # grep
 search () { find . | xargs grep --color=auto "$@"; }
+
+[[ -f $HOME/.bash_functions ]] && source $HOME/.bash_functions
